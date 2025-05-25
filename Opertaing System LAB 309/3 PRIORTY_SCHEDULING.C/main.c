@@ -43,7 +43,7 @@ void priorityScheduling(struct Process proc[], int n) {
     calculateWaitingTime(proc, n);
     calculateTurnaroundTime(proc, n);
 
-    // Display results
+    
     printf("\nProcess\tPriority\tBurst Time\tWaiting Time\tTurnaround Time\n");
     for (int i = 0; i < n; i++) {
         printf("%d\t%d\t\t%d\t\t%d\t\t%d\n",
@@ -54,7 +54,7 @@ void priorityScheduling(struct Process proc[], int n) {
                proc[i].turnaroundTime);
     }
 
-    // Calculate average waiting time and turnaround time
+    
     float totalWaiting = 0, totalTurnaround = 0;
     for (int i = 0; i < n; i++) {
         totalWaiting += proc[i].waitingTime;
