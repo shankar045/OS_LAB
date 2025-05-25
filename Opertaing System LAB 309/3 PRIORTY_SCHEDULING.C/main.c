@@ -28,7 +28,6 @@ void calculateTurnaroundTime(struct Process proc[], int n) {
 }
 
 void priorityScheduling(struct Process proc[], int n) {
-    // Sort processes by priority (lowest priority value first)
     struct Process temp;
     for (int i = 0; i < n - 1; i++) {
         for (int j = i + 1; j < n; j++) {
