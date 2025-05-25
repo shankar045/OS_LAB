@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 struct Process {
-    int pid;          // Process ID
-    int burstTime;    // CPU Burst Time
-    int priority;     // Priority (lower value = higher priority)
+    int pid;         
+    int burstTime;    
+    int priority;    
     int waitingTime;
     int turnaroundTime;
 };
