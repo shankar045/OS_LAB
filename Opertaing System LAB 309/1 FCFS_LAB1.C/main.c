@@ -19,7 +19,7 @@ int main() {
         scanf("%d", &bt[i]);
     }
 
-    // Sorting by arrival time
+    
     for (int i = 0; i < n - 1; i++) {
         for (int j = i + 1; j < n; j++) {
             if (at[i] > at[j]) {
